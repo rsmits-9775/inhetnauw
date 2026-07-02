@@ -3,21 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>In het NauW - Implementatie</title>
+  <title>In het NauW - Twee Definitieve Opties</title>
   
-  <!-- 1. Laad het lettertype in de browser -->
+  <!-- 1. Laad het lettertype -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&display=swap" rel="stylesheet">
   
-  <!-- 2. Laad jouw nieuwe CSS bestand -->
+  <!-- 2. Laad jouw CSS bestand -->
   <link rel="stylesheet" href="logo.css" />
+  
+  <style>
+    body { padding: 50px; background: #ffffff; }
+    .demo-title { font-family: sans-serif; font-size: 14px; color: #888; margin-bottom: 20px; }
+    .space { margin-bottom: 100px; }
+  </style>
 </head>
 <body>
 
-  <!-- HET LOGO OP STANDAARD FORMAAT (1) -->
-  <P> Normaal logo </P>
-  <div class="inhaut-logo-container">
+  <!-- VARIANT 1 -->
+  <div class="demo-title">Variant 1: Logo met de standaard W (700 vet / 100% breed)</div>
+  <div class="inhaut-logo-container space">
     <div class="au-anchor">
       <div class="line line-in">in</div>
       <div class="line line-het">het</div>
@@ -30,11 +36,23 @@
     </div>
   </div>
 
-  <br><br><br>
+  <!-- VARIANT 2 -->
+  <div class="demo-title">Variant 2: Nieuw - W behoudt originele vetheid (700), maar is 3% smaller</div>
+  <div class="inhaut-logo-container w-adjusted">
+    <div class="au-anchor">
+      <div class="line line-in">in</div>
+      <div class="line line-het">het</div>
+    </div>
+    <div class="wordmark">
+      <span class="big">N</span>
+      <span class="small">a</span>
+      <span class="small">u</span>
+      <span class="big letter-w">W</span>
+    </div>
+  </div>
 
-  <!-- VOORBEELD: HET LOGO DAARONDER DIRECT KRACHTIG VERKLEINEN NAAR 30% (0.3) -->
-  <P>Kleiner geschaald logo</P>
-  <div class="inhaut-logo-container" style="--logo-scale: 0.3;">
+</body>
+</html>  <div class="inhaut-logo-container" style="--logo-scale: 0.3;">
     <div class="au-anchor">
       <div class="line line-in">in</div>
       <div class="line line-het">het</div>
