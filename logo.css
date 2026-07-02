@@ -1,0 +1,74 @@
+/* ==========================================================================
+   IN HET NAUW - DEFINITIEF LOGO STYLESHEET
+   ========================================================================== */
+
+.inhaut-logo-container {
+  /* HIER PAS JOU DE GROOTTE AAN: 1 is origineel, 0.5 is kleiner, 2 is groter, etc. */
+  --logo-scale: 1; 
+  
+  position: relative;
+  width: fit-content;
+  font-family: "EB Garamond", serif;
+}
+
+/* DE BASIS WORDMARK (N a u W) */
+.inhaut-logo-container .wordmark {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  line-height: 0.8;
+}
+
+.inhaut-logo-container .wordmark .big {
+  font-size: calc(190px * var(--logo-scale));
+  font-weight: 700;
+  display: inline-block;
+  line-height: 0.8;
+}
+
+/* OPTISCHE CORRECTIE: HOOFDLETTERS DICHTER OP DE AU */
+.inhaut-logo-container .wordmark .big:first-child {
+  position: relative;
+  left: calc(8px * var(--logo-scale)); 
+}
+
+.inhaut-logo-container .wordmark .letter-w {
+  position: relative;
+  left: calc(-28px * var(--logo-scale)); 
+}
+
+/* JOUW GEKOZEN AU-AFSTAND */
+.inhaut-logo-container .wordmark .small {
+  font-size: calc(120px * var(--logo-scale));
+  font-weight: 700;
+  display: inline-block;
+  line-height: 0.8;
+  margin-left: calc(-5px * var(--logo-scale));  
+  margin-right: calc(-5px * var(--logo-scale));
+}
+
+/* TEKST ZONE (in het): PERFECT GECENTREERD BONSEN DE AU */
+.inhaut-logo-container .au-anchor {
+  position: absolute;
+  left: calc(137px * var(--logo-scale)); 
+  width: calc(124px * var(--logo-scale));    
+  text-align: center;
+  top: calc(16px * var(--logo-scale));       
+}
+
+.inhaut-logo-container .line {
+  font-weight: 500;    /* Gekozen Medium 500 dikte */
+  line-height: 1;
+  display: block;
+  letter-spacing: 0px; 
+  text-indent: 0px;
+}
+
+.inhaut-logo-container .line-in {
+  font-size: calc(42px * var(--logo-scale));
+  margin-bottom: calc(-10px * var(--logo-scale));
+}
+
+.inhaut-logo-container .line-het {
+  font-size: calc(42px * var(--logo-scale));
+}
