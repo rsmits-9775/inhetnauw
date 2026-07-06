@@ -1,5 +1,5 @@
 /* ==========================================================================
-   IN HET NAUW - LOGO STYLESHEET (INCLUSIEF GEAANGEPASTE VARIANT 2)
+   IN HET NAUW - LOGO STYLESHEET (INCLUSIEF VARIANT 2 & 3)
    ========================================================================== */
 
 .inhaut-logo-container {
@@ -35,6 +35,65 @@
 .inhaut-logo-container .wordmark .letter-w {
   position: relative;
   left: calc(-28px * var(--logo-scale)); 
+}
+
+/* JOUW GEKOZEN AU-AFSTAND */
+.inhaut-logo-container .wordmark .small {
+  font-size: calc(120px * var(--logo-scale));
+  font-weight: 700;
+  display: inline-block;
+  line-height: 0.8;
+  margin-left: calc(-5px * var(--logo-scale));  
+  margin-right: calc(-5px * var(--logo-scale));
+}
+
+/* TEKST ZONE (in het): PERFECT GECENTREERD BOVEN DE AU */
+.inhaut-logo-container .au-anchor {
+  position: absolute;
+  left: calc(137px * var(--logo-scale)); 
+  width: calc(124px * var(--logo-scale));    
+  text-align: center;
+  top: calc(16px * var(--logo-scale));       
+}
+
+.inhaut-logo-container .line {
+  font-weight: 500;    
+  line-height: 1;
+  display: block;
+  letter-spacing: 0px; 
+  text-indent: 0px;
+}
+
+.inhaut-logo-container .line-in {
+  font-size: calc(42px * var(--logo-scale));
+  margin-bottom: calc(-10px * var(--logo-scale));
+}
+
+.inhaut-logo-container .line-het {
+  font-size: calc(42px * var(--logo-scale));
+}
+
+/* ==========================================================================
+   VARIANT 2: W is 3% smaller & originele vetheid (700)
+   ========================================================================== */
+.inhaut-logo-container.w-adjusted .wordmark .letter-w {
+  font-weight: 700;                  
+  transform: scaleX(0.97);           
+  transform-origin: left bottom;     
+}
+
+/* ==========================================================================
+   VARIANT 3: NIEUW - PROMINENTE AU (Grotere middenletters + hogere tekst)
+   ========================================================================== */
+.inhaut-logo-container.au-prominent .wordmark .small {
+  font-size: calc(132px * var(--logo-scale)); /* Gekozen vergroting voor de A en U */
+}
+
+.inhaut-logo-container.au-prominent .au-anchor {
+  top: calc(-4px * var(--logo-scale));        /* 'in het' een paar pixels hoger geplaatst */
+  left: calc(142px * var(--logo-scale));      /* Gecorrigeerd naar de nieuwe breedte van de AU */
+  width: calc(136px * var(--logo-scale));     /* Gecorrigeerd naar de nieuwe breedte van de AU */
+}  left: calc(-28px * var(--logo-scale)); 
 }
 
 /* JOUW GEKOZEN AU-AFSTAND */
