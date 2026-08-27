@@ -110,5 +110,5 @@
 
 /* Variant 2b: extra ruimte tussen "a" en "u" */
 .inhaut-logo-container.au-spaced .wordmark .letter-a {
-  margin-right: 7px; /* duidelijk grotere afstand tussen a en u in Variant 2b */
+  margin-right: 1px; /* duidelijk grotere afstand tussen a en u in Variant 2b */
 }
