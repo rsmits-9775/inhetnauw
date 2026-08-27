@@ -121,7 +121,7 @@
 }
 /* a–u afstand zoals Variant 2b */
 .inhaut-logo-container.v3 .wordmark .letter-a {
-  margin-right: 1px;
+  margin-right: 1px; /* zelfde extra ruimte als Variant 2b */
 }
 /* a en u iets groter dan standaard */
 .inhaut-logo-container.v3 .wordmark .small {
