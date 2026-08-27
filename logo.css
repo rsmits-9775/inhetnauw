@@ -104,21 +104,31 @@
 }
 
 /* ==========================================================================
-   VARIANT 1a: gebaseerd op Variant 2b (extra ruimte a–u) met kleinere ruimte N–a en u–W
+   VARIANT 3: a–u zoals 2b, N–a en u–W zoals 1, a/u iets groter, "in het" iets hoger
    ========================================================================== */
-.inhaut-logo-container.v1a .wordmark .letter-w {
+/* W-correctie zoals Variant 2/1 */
+.inhaut-logo-container.v3 .wordmark .letter-w {
   font-weight: 700;
   transform: scaleX(0.97);
   transform-origin: left bottom;
 }
-/* Behoud extra ruimte a–u van 2b */
-.inhaut-logo-container.v1a .wordmark .letter-a {
-  margin-right: 1px;
-}
-/* Tighter spacing between N and a, and between u and W */
-.inhaut-logo-container.v1a .wordmark .big:first-child {
+/* N dichter naar a en W dichter naar u zoals Variant 1 */
+.inhaut-logo-container.v3 .wordmark .big:first-child {
   left: calc(10px * var(--logo-scale));
 }
-.inhaut-logo-container.v1a .wordmark .letter-w {
+.inhaut-logo-container.v3 .wordmark .letter-w {
   left: calc(-30px * var(--logo-scale));
+}
+/* a–u afstand zoals Variant 2b */
+.inhaut-logo-container.v3 .wordmark .letter-a {
+  margin-right: 1px;
+}
+/* a en u iets groter dan standaard */
+.inhaut-logo-container.v3 .wordmark .small {
+  font-size: calc(124px * var(--logo-scale)); /* + ~3.3% t.o.v. 120 */
+}
+/* "in het" iets omhoog, proportioneel, zonder boven N/W uit te steken */
+.inhaut-logo-container.v3 .au-anchor {
+  top: calc(12px * var(--logo-scale)); /* was 16px; iets hoger (kleinere top-waarde) */
+  /* behoud breedte en left zodat centrering boven AU gelijk blijft */
 }
