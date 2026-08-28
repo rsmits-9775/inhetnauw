@@ -124,6 +124,6 @@
 }
 /* a en u iets groter dan v3, zonder overlap */
 .inhaut-logo-container.v4 .wordmark .small {
-  font-size: calc(128px * var(--logo-scale)); /* iets groter dan v3 (124) */
+  font-size: calc(132px * var(--logo-scale)); /* iets groter dan v3 (124) */
 }
 /* "in het" positie blijft gelijk aan basis/v3: geen override voor .au-anchor */
