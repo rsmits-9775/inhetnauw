@@ -57,7 +57,7 @@
 }
 
 .inhaut-logo-container .line {
-  font-weight: 500;    
+  font-weight: 500;
   line-height: 1;
   display: block;
   letter-spacing: 0px; 
@@ -65,12 +65,12 @@
 }
 
 .inhaut-logo-container .line-in {
-  font-size: calc(42px * var(--logo-scale));
+  font-size: calc(48px * var(--logo-scale));
   margin-bottom: calc(-10px * var(--logo-scale));
 }
 
 .inhaut-logo-container .line-het {
-  font-size: calc(42px * var(--logo-scale));
+  font-size: calc(48px * var(--logo-scale));
 }
 
 /* ==========================================================================
@@ -87,7 +87,7 @@
   left: calc(14px * var(--logo-scale)); /* N iets meer naar a (richting midden) */
 }
 .inhaut-logo-container.v4 .wordmark .letter-w {
-  left: calc(-36px * var(--logo-scale)); /* W iets meer naar u (richting midden) */
+  left: calc(-38px * var(--logo-scale)); /* W iets meer naar u (richting midden) */
 }
 /* a–u afstand zoals 2b/3 */
 .inhaut-logo-container.v4 .wordmark .letter-a {
