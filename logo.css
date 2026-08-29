@@ -33,7 +33,12 @@
 .inhaut-logo-container .wordmark .letter-w {
   position: relative;
   left: calc(-40px * var(--logo-scale));
+  font-weight: 700;
+  transform: scaleX(0.94);
+  transform-origin: left bottom;
 }
+
+
 
 /* STANDAARD AU-AFSTAND */
 .inhaut-logo-container .wordmark .small {
@@ -51,9 +56,9 @@
   left: calc(145px * var(--logo-scale));
   width: calc(124px * var(--logo-scale));
   text-align: center;
-  top: calc(10px * var(--logo-scale));
+  top: calc(8px * var(--logo-scale));
 }
-
+  
 .inhaut-logo-container .line {
   font-weight: 500;
   line-height: 1;
@@ -100,5 +105,12 @@
   line-height: 1.1;
   margin-bottom: calc(10px * var(--logo-scale));
   width: 100%;
+}
+
+/* Variant 4 */
+.inhaut-logo-container.v4 .wordmark .letter-w {
+  font-weight: 700;
+  transform: scaleX(0.94);
+  transform-origin: left bottom;
 }
 
