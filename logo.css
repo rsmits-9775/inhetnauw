@@ -38,8 +38,6 @@
   transform-origin: left bottom;
 }
 
-
-
 /* STANDAARD AU-AFSTAND */
 .inhaut-logo-container .wordmark .small {
   font-size: calc(140px * var(--logo-scale));
@@ -107,10 +105,11 @@
   width: 100%;
 }
 
-/* Variant 4 */
+/* Variant 4
 .inhaut-logo-container.v4 .wordmark .letter-w {
   font-weight: 700;
   transform: scaleX(0.94);
   transform-origin: left bottom;
 }
 
+*/
