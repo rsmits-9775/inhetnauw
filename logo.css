@@ -78,9 +78,9 @@
 .inhaut-logo-container .payoff {
   margin-top: calc(8px * var(--logo-scale));
   font-family: "EB Garamond", serif;
-  position: relative;
+  position: absolute; /* Nieuw: absolute positioning */
+  left: calc(20px * var(--logo-scale)); /* Aangepast: verplaats naar rechts */
   width: fit-content;
-  /* Geen margin-left/auto meer, we positioneren expliciet */
 }
 
 .inhaut-logo-container .payoff .slogan {
