@@ -79,6 +79,9 @@
   margin-top: calc(8px * var(--logo-scale));
   text-align: center;
   font-family: "EB Garamond", serif;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .inhaut-logo-container .payoff .slogan {
