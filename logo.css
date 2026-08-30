@@ -34,7 +34,7 @@
 
 .inhaut-logo-container .wordmark .letter-w {
   position: relative;
-  left: calc(-30px * var(--logo-scale));
+  left: calc(-37px * var(--logo-scale));
   font-weight: 700;
   font-size: calc(200px * var(--logo-scale));
   transform: scaleX(0.94);
@@ -59,7 +59,7 @@
 /* TEKST ZONE (in het): PERFECT GECENTREERD BOVEN DE AU */
 .inhaut-logo-container .au-anchor {
   position: absolute;
-  left: calc(138px * var(--logo-scale));
+  left: calc(142px * var(--logo-scale));
   width: calc(124px * var(--logo-scale));
   text-align: center;
   top: calc(28px * var(--logo-scale));
