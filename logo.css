@@ -7,6 +7,7 @@
   position: relative;
   width: fit-content;
   font-family: "EB Garamond", serif;
+  line-height: 1; /* Forceer consistente lijnhoogte */
 }
 
 /* DE BASIS WORDMARK (N a u W) */
@@ -14,38 +15,45 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  line-height: 0.8;
+  line-height: 1; /* Consistente lijnhoogte */
 }
 
 .inhaut-logo-container .wordmark .big {
   font-size: calc(190px * var(--logo-scale));
-  font-weight: 700;
+  font-weight: 700; /* Gebruik 700 in plaats van 500 voor consistentie */
   display: inline-block;
-  line-height: 0.8;
+  line-height: 1; /* Forceer consistente hoogte */
 }
 
 /* OPTISCHE CORRECTIE: HOOFDLETTERS DICHTER OP DE AU */
 .inhaut-logo-container .wordmark .big:first-child {
   position: relative;
   left: calc(16px * var(--logo-scale));
+  line-height: 1; /* Consistente hoogte */
 }
 
 .inhaut-logo-container .wordmark .letter-w {
   position: relative;
-  left: calc(-40px * var(--logo-scale));
+  left: calc(-30px * var(--logo-scale));
   font-weight: 700;
+  font-size: calc(200px * var(--logo-scale));
   transform: scaleX(0.94);
   transform-origin: left bottom;
+  line-height: 1; /* Behoud hoogte */
 }
 
 /* STANDAARD AU-AFSTAND */
 .inhaut-logo-container .wordmark .small {
   font-size: calc(140px * var(--logo-scale));
-  font-weight: 700;
+  font-weight: 700; /* Consistentie */
   display: inline-block;
-  line-height: 0.8;
+  line-height: 1; /* Consistente hoogte */
   margin-left: calc(-3px * var(--logo-scale));
   margin-right: calc(-3px * var(--logo-scale));
+  position: relative; /* Nieuw: relatieve positioning */
+  top: calc(-7px * var(--logo-scale)); /* Verplaats omhoog */
+    /* Of gebruik transform voor subtielere aanpassing */
+    /* transform: translateY(-5px); */
 }
 
 /* TEKST ZONE (in het): PERFECT GECENTREERD BOVEN DE AU */
@@ -54,24 +62,34 @@
   left: calc(145px * var(--logo-scale));
   width: calc(124px * var(--logo-scale));
   text-align: center;
-  top: calc(8px * var(--logo-scale));
+  top: calc(28px * var(--logo-scale));
+  line-height: 1 !important; /* Forceer consistente lijnhoogte */
+  font-size: 1em; /* Reset font size */
+  margin: 0; /* Geen extra marges */
+  padding: 0; /* Geen extra padding */
 }
-  
+
 .inhaut-logo-container .line {
-  font-weight: 500;
-  line-height: 1;
+  font-weight: 700 !important; /* Consistente vetheid */
+  line-height: 1 !important;
   display: block;
   letter-spacing: 0px;
   text-indent: 0px;
+  margin: 0;
+  padding: 0;
+  font-size: calc(44px * var(--logo-scale)) !important; /* Forceer consistentie */
 }
 
 .inhaut-logo-container .line-in {
-  font-size: calc(44px * var(--logo-scale));
-  margin-bottom: calc(-10px * var(--logo-scale));
+  font-size: calc(44px * var(--logo-scale)) !important;
+  margin-bottom: calc(-10px * var(--logo-scale)) !important;
+  line-height: 1 !important;
 }
 
 .inhaut-logo-container .line-het {
-  font-size: calc(44px * var(--logo-scale));
+  font-size: calc(44px * var(--logo-scale)) !important;
+  margin-bottom: calc(-10px * var(--logo-scale)) !important;
+  line-height: 1 !important;
 }
 
 /* ==========================================================================
@@ -81,35 +99,34 @@
 .inhaut-logo-container .payoff {
   margin-top: calc(8px * var(--logo-scale));
   font-family: "EB Garamond", serif;
-  position: absolute; /* Nieuw: absolute positioning */
-  left: calc(20px * var(--logo-scale)); /* Aangepast: verplaats naar rechts */
+  position: absolute;
+  left: calc(20px * var(--logo-scale));
   width: fit-content;
+  line-height: 1 !important; /* Forceer consistentie */
 }
 
 .inhaut-logo-container .payoff .slogan {
-  font-size: calc(22px * var(--logo-scale));
-  font-weight: 500;
-  line-height: 1.4;
+  font-size: calc(22px * var(--logo-scale)) !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
   text-align: left;
-  margin-bottom: calc(1px * var(--logo-scale));
+  margin-bottom: calc(1px * var(--logo-scale)) !important;
   width: 100%;
 }
 
 .inhaut-logo-container .payoff .subslogan {
-  font-size: calc(16px * var(--logo-scale));
-  font-weight: 400;
+  font-size: calc(16px * var(--logo-scale)) !important;
+  font-weight: 400 !important;
   font-style: italic;
   text-align: right;
-  line-height: 1.1;
-  margin-bottom: calc(10px * var(--logo-scale));
+  line-height: 1.1 !important;
+  margin-bottom: calc(10px * var(--logo-scale)) !important;
   width: 100%;
 }
 
-/* Variant 4
-.inhaut-logo-container.v4 .wordmark .letter-w {
-  font-weight: 700;
-  transform: scaleX(0.94);
-  transform-origin: left bottom;
+/* Forceer browser consistentie */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-*/
