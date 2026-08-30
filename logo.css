@@ -59,7 +59,7 @@
 /* TEKST ZONE (in het): PERFECT GECENTREERD BOVEN DE AU */
 .inhaut-logo-container .au-anchor {
   position: absolute;
-  left: calc(145px * var(--logo-scale));
+  left: calc(138px * var(--logo-scale));
   width: calc(124px * var(--logo-scale));
   text-align: center;
   top: calc(28px * var(--logo-scale));
