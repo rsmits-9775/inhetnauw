@@ -16,33 +16,6 @@
 body {
     background-color: #ffffff;
     color: #333;
-    transition: background-color 0.3s, color 0.3s; /* Voeg overgang toe voor vloeiende themawisseling */
-}
-
-/* Donkere Modus Stijlen: Nu toegepast op de body wanneer de klasse 'dark-mode' aanwezig is */
-body.dark-mode {
-    background-color: #1a1a1a;
-    color: #e0e0e0;
-}
-
-/* Toggle Button Styling */
-.theme-toggle {
-    margin-bottom: 20px;
-}
-
-.toggle-label {
-    display: inline-block;
-    padding: 8px 15px;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-/* Wanneer de checkbox is aangevinkt (donkere modus), verandert de stijl van het label */
-#theme-toggle:checked + .toggle-label {
-    background-color: #007bff; /* Een andere kleur voor de actieve staat */
 }
 
 
@@ -50,15 +23,53 @@ body.dark-mode {
 /* ==========================================================================
    LOGO AFBEELDING LOGICA (THEMA SWITCH)
    ========================================================================== */
+.content-wrapper {
+        width :200px;
+}
+
+.content-wrapper.light{
+    background-color: white;   #achtergrond kleur
+    color: black;               #tekst kleur
+}
+
+.content-wrapper.dark{
+    background-color: black;
+    color: white;
+}
 
 /* Zorg ervoor dat de container van de afbeelding de volledige breedte en hoogte heeft */
-.Logo {
+.logo {
     display: block;
-    width: 100%;
-    height: 100%;
+    height: 91px;
+    width: auto;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin: 0; /* Verwijder standaard marges */
+    padding: 0; /* Verwijder standaard padding */
+    max-width: 100%; /* Zorgt ervoor dat het nooit breder kan zijn dan zijn container */
+}
+
+.logo img {
+    max-width: auto; /* Zorgt ervoor dat de afbeelding nooit de container overschrijdt */
+    height: auto; /* Behoud de juiste aspect ratio */
+    display: block; /* Haalt de inline-element-gedraging van de img */
+}
+
+
+.title {
+    width: 200px;
+}
+
+.title.light {
+    background-color: white;
+    color: black;
+}
+
+.title.dark {
+    background-color: black;
+    color: white;
+}
     background-color: white;
 }
 
