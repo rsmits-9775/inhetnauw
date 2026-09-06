@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';">
-  <title>In het NauW - Actuele Opties</title>
+  <title>In het NauW - Actuele logo Opties</title>
   
   <!-- 1. Laad het lettertype -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,35 +19,31 @@
       padding: 50px;
       background: #ffffff;
       font-family: "EB Garamond", serif;
+      transition: background-color 0.3s, color 0.3s; /* Voeg overgang toe voor vloeiende themawisseling */
     }
-    .demo-title {
-      font-family: sans-serif;
-      font-size: 14px;
-      color: #888;
-      margin-bottom: 20px;
-    }
+    
     .space {
       margin-bottom: 120px;
-    }
-    
-    /* Extra stijlen voor de nieuwe payoff opties */
-    .small-scale {
-      --logo-scale: 0.3;
-    }
-    
-    .medium-scale {
-      --logo-scale: 0.6;
-    }
-    
-    .large-scale {
-      --logo-scale: 1.5;
     }
   </style>
 </head>
 
 <body>
- <!-- Logo als SVG -->
-<div class="Title"> Logo als SVG </div>
-<img src="./Media/logo_inhetnauw.svg" alt="In het NauW Logo">
+
+
+ <!-- Content Wrapper (Dit element zal de themaklasse dragen) -->
+<div class="content-wrapper">
+    <!-- Licht logo als SVG -->
+    <div class="Title"> Licht logo als SVG </div >
+    <div class="Logo">
+        <img src="./Media/logo_inhetnauw.svg" alt="In het NauW Logo">
+    </div>
+    <!-- Licht logo als SVG -->
+    <div class="Title"> Donker logo als SVG </div >
+    <div class="Logo">
+        <img src="./Media/logo_inhetnauw_dark.svg" alt="In het NauW Logo">
+    </div>
+</div>
+
 </body>
 </html>
